@@ -52,15 +52,15 @@
         </div>
     </div>
     <div class="jumbotron text-center" style="horiz-align:center;width: 100%">
-        <h1>Internet Protocals & DNS</h1>
+        <h1>Internet Protocols & DNS</h1>
     </div>
 
     <blockquote class="blockquote">
         <p class="mb-0">
         <h3>How does network communicate with each other?</h3>
 
-        <p>Long before in the 1970s there was no standard methods for networks to commuicate. Then came the two heros
-            Vint Cerf and Bob Kahn who developed something called the internet protocal.
+        <p>Long before in the 1970s there was no standard methods for networks to communicate. Then came the two heros
+            Vint Cerf and Bob Kahn who developed something called the internet protocol.
             which made the communication possible.
         </p>
         <h3>How does the Internet Work?</h3>
@@ -97,9 +97,11 @@
         <p>
             These addresses are called IP addresses and there are two standards.
         </p>
-        <p>The first address standard is called IPv4 and it looks like <code class="gp iq ir is it b">212.78.1.25</code> . But because IPv4 supports only 2³²
+        <p>The first address standard is called IPv4 and it looks like <code class="gp iq ir is it b">212.78.1.25</code>
+            . But because IPv4 supports only 2³²
             (about 4 billion) possible addresses, the Internet Task Force proposed a new address standard called IPv6,
-            which look like <code class="gp iq ir is it b">3ffe:1893:3452:4:345:f345:f345:42fc</code> . IPv6 supports 2¹²⁸ possible addresses, allowing for
+            which look like <code class="gp iq ir is it b">3ffe:1893:3452:4:345:f345:f345:42fc</code> . IPv6 supports
+            2¹²⁸ possible addresses, allowing for
             much more networked devices, which will be plenty more than the as of 2017 current 8+ billion networked
             devices on the Internet.
         </p>
@@ -118,10 +120,13 @@
 
         <p>It’s because there are public and private IP addresses. Multiple devices on a local network connected to the
             Internet will share the same public IP address. Within the local network, these devices are differentiated
-            from each other by private IP addresses, typically of the form <code class="gp iq ir is it b">192.168.xx</code> or <code class="gp iq ir is it b">172.16.x.x</code> or <code class="gp iq ir is it b">10.x.x.x</code>where <code class="gp iq ir is it b">x</code>
+            from each other by private IP addresses, typically of the form <code
+                    class="gp iq ir is it b">192.168.xx</code> or <code class="gp iq ir is it b">172.16.x.x</code> or
+            <code class="gp iq ir is it b">10.x.x.x</code>where <code class="gp iq ir is it b">x</code>
             is a number between 1 and 255. These private IP addresses are assigned by Dynamic Host Configuration
             Protocol (DHCP).</p>
-        <p> For example, if a laptop and a smart phone on the same local network both make a request to <code class="gp iq ir is it b">www.google.com</code>,
+        <p> For example, if a laptop and a smart phone on the same local network both make a request to <code
+                class="gp iq ir is it b">www.google.com</code>,
             before the packets leave the modem, it modifies the packet headers and assigns one of its ports to that
             packet. When the google server responds to the requests, it sends data back to the modem at this specific
             port, so the modem will know whether to route the packets to the laptop or the smart phone.</p>
@@ -134,7 +139,8 @@
         </p>
         <h3>How do networked computers figure out ip addresses based on domain names?</h3>
 
-        <p>We call looking up the IP address of a human-readable domain name like <code class="gp iq ir is it b">www.google.com</code> “resolving the IP
+        <p>We call looking up the IP address of a human-readable domain name like <code class="gp iq ir is it b">www.google.com</code>
+            “resolving the IP
             address”. Computers resolve IP addresses through the Domain Name System (DNS), a decentralized database of
             mappings from domain names to IP addresses.
         </p>
@@ -143,7 +149,8 @@
             it queries the ISP’s DNS servers which are dedicated to resolving IP addresses. If the ISP’s DNS servers
             can’t find resolve the IP address, they query the root name servers, which can resolve every domain name for
             a given top-level domain . Top-level domains are the words to the right of the right-most period in a domain
-            name. <code class="gp iq ir is it b">.com</code> <code class="gp iq ir is it b">.net</code><code class="gp iq ir is it b"> .org</code> are some examples of top-level domains.
+            name. <code class="gp iq ir is it b">.com</code> <code class="gp iq ir is it b">.net</code><code
+                    class="gp iq ir is it b"> .org</code> are some examples of top-level domains.
         </p>
 
 
