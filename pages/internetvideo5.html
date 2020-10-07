@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>internet video5</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+            integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+            crossorigin="anonymous"></script>
+    <!--calling the js file used to make the background image stretch all the way across screen-->
+    <script src="../js/main.js"></script>
+    <!--calling the js file used to make the background image stretch all the way across screen-->
+    <link rel="stylesheet" type="text/css" href="../css/main.css">
+
+
+</head>
+<body>
+
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+
+        <ul class="nav navbar-nav">
+            <li class="active"><a href="https://github.com/sh667/IS601HistoryWeb">Home</a></li>
+            <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">Topics
+                    <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                    <li><a href="internetinvention.html">Internet Invention</a></li>
+                    <li><a href="browserwar.html">Browser Wars</a></li>
+                    <li><a href="internetsearch.html">Internet Search</a></li>
+                    <li><a href="dotcombubble.html">Dot com bubble</a></li>
+                    <li><a href="people.html">The People</a></li>
+                    <li><a href="historyofweb.html">Internet History</a></li>
+                </ul>
+            </li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="Team.html">Team</a></li>
+        </ul>
+    </div>
+</nav>
+
+<div class="text-center">
+
+
+    <div>
+        <img src="../images/internetv5.jpg" alt="inventionimage" style="horiz-align:center;width: 50%">
+    </div>
+</div>
+<div class="jumbotron text-center" style="horiz-align:center;width: 100%">
+    <h1>Encryption & Decryption </h1>
+</div>
+
+<blockquote class="blockquote">
+    <p class="mb-0">
+    <h3>The need for encryption</h3>
+    <p>A huge amount of private data is sent around the Internet every day: emails with details about our personal
+        lives,
+        passwords that we type into login screens, tax documents that we upload to servers.</p>
+
+    <p>The Internet protocols send private data in packets on the same routes as everyone else's data, and
+        unfortunately,
+        attackers have figured out ways to look at the data whizzing around the Internet.
+    </p>
+    <p>That's where encryption comes in: encrypting data means that we scramble the original data to hide the meaning of
+        the text, while still making it possible for the data to be unscrambled using a secret key.
+        Encryption enables two people (or computers!) to share private information over open networks.</p>
+    <p>Now we'll dive into the two most common types of encryption used in securing Internet communications: symmetric
+        encryption and public key encryption.</p>
+
+    <h3>Encryption, decryption, and cracking</h3>
+
+    <p>One of the earliest encryption techniques is the Caesar Cipher, invented by Julius Caesar more than two thousand
+        years ago to communicate messages to his allies.
+        The Caesar Cipher is a great introduction to encryption, decryption, and code cracking, thanks to its
+        simplicity.
+    </p>
+
+    <h3><strong>Encrypting a message</strong></h3>
+    <p>Imagine Caesar wants to send this message:</p>
+    <p>SECRET MEETING AT THE PALACE</p>
+    <p>Here's what that might look like encrypted:</p>
+    <p>YKIXKZ SKKZOTM GZ ZNK VGRGIK</p>
+    <p>That looks an awfully lot like gobbledygook at first, but this encrypted message is actually very related to the
+        original text.</p>
+    <p>The Caesar Cipher is a simple substitution cipher which replaces each original letter with a different letter in
+        the
+        alphabet by shifting the alphabet by a certain amount.</p>
+
+    <h3><strong>Decrypting a message</strong></h3>
+    <p> According to historical records, Caesar always used a shift of 3. As long as his message recipient knew the
+        shift
+        amount, it was trivial for them to decode the message.</p>
+    <p>Imagine Caesar sends this message to a comrade:</p>
+    <p>EHZDUH EUXWXVA</p>
+    <p>Answer:</p>
+    <strong>BEWARE BRUTUS</strong>
+
+    <p>Caesar Cipher was very easy to crack because English Alphabets were only 26.Later then made the code for each
+        alphabet in the message, which made it very hard to decode the message without the key. </p>
+
+    <h3>Public key encryption</h3>
+
+    <p>On the Internet, two computers often want to exchange secure data with each other. When I type my password into
+        the login screen, I want my computer to send that data safely to the servers. I do not
+        want to worry that an attacker might be monitoring my Internet traffic and watching the password go across the
+        wires.
+    </p>
+    <p> Symmetric encryption techniques rely on both the sender and receiver using the same key to encrypt and decrypt
+        the data. How can my computer and the server exchange the key securely? If an attacker can see my
+        password go across the wires, then they can also see an encryption key!
+    </p>
+
+    <p>Public key encryption to the rescue! It's an asymmetric encryption technique which uses different keys for
+        encryption and decryption, allowing computers over the Internet to securely communicate with each other.</p>
+    <p>Let's step through the high-level process of public key encryption.</p>
+    <ui>
+        <li>Step 1: Key generation</li>
+        <p>Each person (or their computer) must generate a pair of keys that identifies them: a private key and a public
+            key.
+            You can generate a pair below, using the same RSA algorithm that's used by your computer.
+        </p>
+        <p> Did you notice it takes a few seconds to generate the keys? That's due to the math involved. The keys are
+            generated by multiplying together two incredibly large primes. The algorithm repeatedly generates random
+            large numbers and checks if they're prime, until it finally finds two random large primes. All that checking
+            for primes can take a while, and these keys are only 512 bits long. The current nationally recommended key
+            length is 2048, or even 3072 bits.
+        </p>
+        <li>Step 2: Key exchange</li>
+        <p>The sending and receiving computers exchange public keys with each other via a reliable channel, like TCP/IP.
+            The private keys are never exchanged.
+        </p>
+        <li>Step 3: Encryption</li>
+        <p>The sending computer encrypts the secret data using the receiving computer's public key and a mathematical
+            operation.</p>
+        The power of public key encryption is in that mathematical operation. It's a "one-way function", which means
+        it's incredibly difficult for a computer to reverse the operation and discover the original data. Even the
+        public key cannot be used to decrypt the data.
+        </p>
+        <li>Step 4: Sending encrypted data</li>
+        <p>The sender can now safely transmit the encrypted data over the Internet without worry of onlookers.</p>
+        <li>Step 5: Decryption</li>
+        <p>Now the receiver can decrypt the message, using their private key. That's the only key that can be used to
+            decrypt the message (in the world!).</p>
+    </ui>
+
+</blockquote>
+
+
+<footer class="page-footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-md-8 col-sm-12">
+                <h6 class="text-uppercase font-weight-bold">Additional Information</h6>
+                <p></p>
+                <p>This site was designed and developed by Sourav Halepalya Aswathnarayan
+                    <br/> as their masters assignment for the course Web development (IS-601)</p>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-12">
+                <h6 class="text-uppercase font-weight-bold">Contact</h6>
+                <p>New Jersey Institute of Technology
+                    <br/>
+                    323 Dr Martin Luther King Jr Blvd, Newark, NJ 07102
+                    <br/>kwilliam@njit.edu
+                    <br/>+(973) 596-3000
+                </p>
+            </div>
+        </div>
+        <div style="height: 20px"></div>
+        <div class="footer-copyright text-center">© 2020 Copyright:
+            <a href="https://github.com/sh667/IS601HistoryWeb">https://github.com/sh667/IS601HistoryWeb</a>
+        </div>
+    </div>
+</footer>
+</div>
+</body>
+</html>

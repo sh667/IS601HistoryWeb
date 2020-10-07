@@ -168,12 +168,16 @@
             <li>is signed by a trusted certificate authority</li>
             <li>has not expired.</li>
         </ui>
+
         <p>The client then uses the SSL certificate’s public key to encrypt a randomly generated temporary secret key
             and send it back to the server. Because the server has the corresponding private key, it can decrypt the
             client’s temporary secret key. Now both client and server know this temporary secret key, so they can both
             use it to symmetrically encrypt the messages they send to each other. They will discard this temporary
-            secret key after their session is over.</p>
+            secret key after their session is over.
+        </p>
+
         <h3>What happens if a hacker intercepts an SSL-encrypted session?</h3>
+
         <p>Suppose a hacker intercepted every message sent between the client and the server. The hacker sees the SSL
             certificate the server sends as well as the client’s encrypted temporary secret key. But because the hacker
             doesn’t have the private key it can’t decrypt the temporarily secret key. And because it doesn’t have the
