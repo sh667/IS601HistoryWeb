@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>internet video3</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+            integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+            crossorigin="anonymous"></script>
+    <!--calling the js file used to make the background image stretch all the way across screen-->
+    <script src="../js/main.js"></script>
+    <!--calling the js file used to make the background image stretch all the way across screen-->
+    <link rel="stylesheet" type="text/css" href="../css/main.css">
+
+
+</head>
+<body>
+
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+
+        <ul class="nav navbar-nav">
+            <li class="active"><a href="https://github.com/sh667/IS601HistoryWeb">Home</a></li>
+            <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">Topics
+                    <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                    <li><a href="icann.html">ICANN</a></li>
+                    <li><a href="w3c.html">W3C</a></li>
+                    <li><a href="tim.html">Tim Berners Lee</a></li>
+                    <li><a href="internetworks.html">Internet Introduction</a></li>
+                    <li><a href="internet.html">Internet</a></li>
+                    <li><a href="internetvideo1.html">Internet-Wires,Cables,Wifi</a></li>
+                    <li><a href="internetvideo2.html">Internet-IP address & DNS</a></li>
+                    <li><a href="internetvideo3.html">Internet-Packets,Routing & Reliability</a></li>
+                    <li><a href="internetvideo4.html">Internet-HTTP & HTML</a></li>
+                    <li><a href="internetvideo5.html">Internet-Encryption & Public Keys</a></li>
+                    <li><a href="internetvideo6.html">Internet-Cyber security Crime </a></li>
+                </ul>
+            </li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="Team.html">Team</a></li>
+        </ul>
+    </div>
+</nav>
+
+<div>
+    <div class="text-center">
+
+
+        <div>
+            <img src="../images/internetv3.jpg" alt="inventionimage" style="horiz-align:center;width: 50%">
+        </div>
+    </div>
+    <div class="jumbotron text-center" style="horiz-align:center;width: 100%">
+        <h1>Packets,Routing & Reliability</h1>
+    </div>
+
+    <blockquote class="blockquote">
+        <p class="mb-0">
+        <h3>Packets</h3>
+
+        <p>Data sent across the Internet is called a message. Before a message is sent, it is first split in many
+            fragments called packets. These packets are sent independently of each other. The typical maximum packet
+            size is between 1000 and 3000 characters. The Internet Protocol specifies how messages should be packetized.
+        </p>
+        <h3>What’s a packet routing network?</h3>
+        <p>It is a network that routes packets from a source computer to a destination computer. The Internet is made
+            up of a massive network of specialized computers called routers. Each router’s job is to know how to move
+            packets along from their source to their destination. A packet will have moved through multiple routers
+            during its journey.</p>
+
+        <p> When a packet moves from one router to the next, it’s called a hop. You can use the command line-tool
+            <code class="gp iq ir is it b">traceroute</code> to see the list of hops packets take between you and a host.</p>
+
+        <div class="text-center">
+            <div>
+                <img src="../images/internetv31.png" alt="inventionimage"
+                     style="horiz-align:center;width:300px;height:250px">
+            </div>
+        </div>
+        <p>The Internet Protocol specifies how network addresses should be attached to the packet’s headers, a
+            designated space in the packet containing its meta-data. The Internet Protocol also specifies how the
+            routers should forward the packets based on the address in the header.</p>
+
+        <h3>Where did these Internet routers come from? Who owns them?</h3>
+        <p>These routers originated in the 1960s as ARPANET, a military project whose goal was a computer network that
+            was decentralized so the government could access and distribute information in the case of a catastrophic
+            event. Since then, a number of Internet Service Providers (ISP) corporations have added routers onto these
+            ARPANET routers.</p>
+        <p> There is no single owner of these Internet routers, but rather multiple owners: The government agencies and
+            universities associated with ARPANET in the early days and ISP corporations like AT&T and Verizon later on.
+        </p>
+        <p>Asking who owns the Internet is like asking who owns all the telephone lines. No one entity owns them all;
+            many different entities own parts of them.
+        </p>
+
+        <h3>Do the packets always arrive in order? If not, how is the message re-assembled?</h3>
+
+        <p>The packets may arrive at their destination out of order. This happens when a later packet finds a quicker
+            path to the destination than an earlier one. But packet’s header contains information about the packet’s
+            order relative to the entire message. The Transport Control Protocol uses this info for reconstructing the
+            message at the destination.
+        </p>
+
+        <h3>Do packets always make it to their destination?</h3>
+        <p>
+            The Internet Protocol makes no guarantee that packets will always arrive at their destinations. When that
+            happens, it’s called called a packet loss. This typically happens when a router receives more packets it can
+            process. It has no option other than to drop some packets.
+        </p>
+        <p>However, the Transport Control Protocol handles packet loss by performing re-transmissions. It does this by
+            having the destination computer periodically send acknowledgement packets back to the source computer
+            indicating how much of the message it has received and reconstructed. If the destination computer finds
+            there are missing packets, it sends a request to the source computer asking it to resend the missing
+            packets.</p>
+        <p> When two computers are communicating through the Transport Control Protocol, we say there is a TCP
+            connection between them.
+        </p>
+
+        <h3>How does the router know where to send a packet? Does it need to know where all the IP addresses are on the
+            Internet?</h3>
+
+        <p> Every router does not need to know where every IP address is. It only needs to know which one of its
+            neighbors, called an outbound link, to route each packet to. Note that IP Addresses can be broken down into
+            two parts, a network prefix and a host identifier. For example, <code class="gp iq ir is it b">129.42.13.69</code> can be broken down into
+        </p>
+        <code class="gp iq ir is it b"><p>Network Prefix: 129.42</p><p>Host Identifier: 13.69</p></code>
+
+        <p>All networked devices that connect to the Internet through a single connection (ie. college campus, a
+            business, or ISP in metro area) will all share the same network prefix.</p>
+        <p>Routers will send all packets of the form <code class="gp iq ir is it b">129.42.*.*</code> to the same location. So instead of keeping track of
+            billions of IP addresses, routers only need to keep track of less than a million network prefix.
+        </p>
+    </blockquote>
+
+
+    <footer class="page-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-md-8 col-sm-12">
+                    <h6 class="text-uppercase font-weight-bold">Additional Information</h6>
+                    <p></p>
+                    <p>This site was designed and developed by Sourav Halepalya Aswathnarayan
+                        <br/> as their masters assignment for the course Web development (IS-601)</p>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12">
+                    <h6 class="text-uppercase font-weight-bold">Contact</h6>
+                    <p>New Jersey Institute of Technology
+                        <br/>
+                        323 Dr Martin Luther King Jr Blvd, Newark, NJ 07102
+                        <br/>kwilliam@njit.edu
+                        <br/>+(973) 596-3000
+                    </p>
+                </div>
+            </div>
+            <div style="height: 20px"></div>
+            <div class="footer-copyright text-center">© 2020 Copyright:
+                <a href="https://github.com/sh667/IS601HistoryWeb">https://github.com/sh667/IS601HistoryWeb</a>
+            </div>
+        </div>
+    </footer>
+</div>
+</body>
+</html>
