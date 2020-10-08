@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>internet video4</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+            integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+            crossorigin="anonymous"></script>
+    <!--calling the js file used to make the background image stretch all the way across screen-->
+    <script src="../js/main.js"></script>
+    <!--calling the js file used to make the background image stretch all the way across screen-->
+    <link rel="stylesheet" type="text/css" href="../css/main.css">
+
+
+</head>
+<body>
+
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+
+        <ul class="nav navbar-nav">
+            <li class="active"><a href="https://github.com/sh667/IS601HistoryWeb">Home</a></li>
+            <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">Topics
+                    <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                    <li><a href="icann.html">ICANN</a></li>
+                    <li><a href="w3c.html">W3C</a></li>
+                    <li><a href="tim.html">Tim Berners Lee</a></li>
+                    <li><a href="internetworks.html">Internet Introduction</a></li>
+                    <li><a href="internet.html">Internet</a></li>
+                    <li><a href="internetvideo1.html">Internet-Wires,Cables,Wifi</a></li>
+                    <li><a href="internetvideo2.html">Internet-IP address & DNS</a></li>
+                    <li><a href="internetvideo3.html">Internet-Packets,Routing & Reliability</a></li>
+                    <li><a href="internetvideo4.html">Internet-HTTP & HTML</a></li>
+                    <li><a href="internetvideo5.html">Internet-Encryption & Public Keys</a></li>
+                    <li><a href="internetvideo6.html">Internet-Cyber security Crime </a></li>
+                </ul>
+            </li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="Team.html">Team</a></li>
+        </ul>
+    </div>
+</nav>
+
+<div>
+    <div class="text-center">
+
+
+        <div>
+            <img src="../images/internetv4.jpg" alt="inventionimage" style="horiz-align:center;width: 50%">
+        </div>
+    </div>
+    <div class="jumbotron text-center" style="horiz-align:center;width: 100%">
+        <h1>HTTP & HTML</h1>
+    </div>
+
+    <blockquote class="blockquote">
+        <p class="mb-0">
+        <h3>How do we communicate with internet?</h3>
+        When we browser in the internet or type in the URL , we are sending a get request from the server to provide
+        information which far away from us.The serve then fetchs the data from its cloud and sends it back.The protocol
+        used for sending the information around is called HTTP(Hyper Text Transfer Protocol).
+
+        <h3>HTTP</h3>
+
+        <p>HTTP is a protocol which allows the fetching of resources, such as HTML documents. It is the foundation of
+            any data exchange on the Web and it is a client-server protocol, which means requests are initiated by the
+            recipient, usually the Web browser. A complete document is reconstructed from the different sub-documents
+            fetched, for instance text, layout description, images, videos, scripts, and more.
+        </p>
+        <div class="text-center">
+            <div>
+                <img src="../images/internetv41.png" alt="inventionimage"
+                     style="horiz-align:center;width:400px;height:300px">
+            </div>
+        </div>
+
+        <p>Clients and servers communicate by exchanging individual messages (as opposed to a stream of data). The
+            messages sent by the client, usually a Web browser, are called requests and the messages sent by the server
+            as an answer are called responses.
+        </p>
+
+        <h3>HTML</h3>
+
+        <p>When you use Google Chrome, Firefox or some other browser to lookup a Web page, what you see on your monitor
+            is a result of an interaction between your browser and a Web server—the computer that "hosts" the website.
+            Your browser and the Web server talk to each other using a special language called Hypertext Transfer
+            Protocol....HTTP.
+        </p>
+
+        <p>What the Web server sends you (after you make your request) is a unique combination of images, text,
+            addresses and special codes for formatting. They come as digital information, often in separate bits and
+            pieces of data, but they manage to come together into a unified page or document.
+        </p>
+
+        <h3>How does that happen?</h3>
+        <p>Through another amazing and versatile formatting language known as Hypertext Markup
+            Language...or HTML.
+        </p>
+
+        <p>In its most basic context, HTML is something like a word processing program on steroids. Before fancy word
+            processing (that allowed italics, bold, underline and different fonts) most messages (in understood
+            languages like English or French) were sent in a plain text format. But over time word processing programs
+            and advancements allowed fancier text development.
+        </p>
+
+        <p>HTML, similarly, grew in sophistication over time according to a universal, non-vendor specific system.
+            The HTML codes handled text and, not long afterword, pictures and layout information.
+        </p>
+
+        <p>In the html the information is directly put in as text. Where as, Images and Videos are pit in by
+            reference.The image and video is linked my a URL,which is fetched by the server when web page is
+            executed.Each of the image and video sends in separate HTTp request.</p>
+
+        <p>In html we not only get information , we also put information. When ever we are filling a form , we are send
+            the information in a post request to the server.The server then saves the details and sends back some
+            cookies. This cookies are stored in our computer.Next time when we send a post request the server exactly
+            knows who we are by the cookies stored in the computer.</p>
+
+        <h3>SSL/TLS</h3>
+
+        <h3>How can sensitive data like credit cards be transmitted securely over the Internet?</h3>
+        <p> In the early days of the Internet, it was enough to ensure that the network routers and links are in
+            physically secure locations. But as the Internet grew in size, more routers meant more points of
+            vulnerability. Furthermore, with the advent of wireless technologies like WiFi, hackers could intercept
+            packets in the air; it was not enough to just ensure the network hardware was physically safe. The solution
+            to this was encryption and authentication through SSL/TLS.
+        </p>
+
+
+        <h3>What is SSL/TLS?</h3>
+
+        <p>SSL stands for Secured Sockets Layer. TLS stands for Transport Layer Security. SSL was first developed by
+            Netscape in 1994 but a later more secure version was devised and renamed TLS. We will refer to them together
+            as SSL/TLS.</p>
+        <p> SSL/TLS is an optional layer that sits between the Transport Layer and the Application Layer. It allows
+            secure Internet communication of sensitive information through encryption and authentication.</p>
+        <p>Encryption means the client can request that the TCP connection to the server be encrypted. This means all
+            messages sent between client and server will be encrypted before breaking it into packets. If hackers
+            intercept these packets, they would not be able to reconstruct the original message.</p>
+        <p>Authentication means the client can trust that the server is who it claims to be. This protects against
+            man-in-the-middle attacks, which is when a malicious party intercepts the connection between client and
+            server to eavesdrop and tamper with their communication.</p>
+        <p>We see SSL in action whenever we visit SSL-enabled websites on modern browsers. When the browser requests a
+            web site using the https protocol instead of http, it’s telling the web server it wants an SSL encrypted
+            connection. If the web server supports SSL, a secure encrypted connection is made and we would see a lock
+            icon next to the address bar on the browser.</p>
+
+
+        <h3>How does SSL authenticate the identity of a server and encrypt their communication?</h3>
+        <p>
+            It uses asymmetric encryption and SSL certificates.</p>
+        <p>Asymmetric encryption is an encryption scheme which uses a public key and a private key. These keys are
+            basically just numbers derived from large primes. The private key is used to decrypt data and sign
+            documents. The public key is used to encrypt data and verify signed documents. Unlike symmetric encryption,
+            asymmetric encryption means the ability to encrypt does not automatically confer the ability to decrypt. It
+            does this by using principles in a mathematical branch called number theory.
+        <p>
+        <p>An SSL certificate is a digital document that consists of a public key assigned to a web server. These SSL
+            certificates are issued to the server by certificate authorities. Operating systems, mobile devices, and
+            browsers come with a database of some certificate authorities so it can verify SSL certificates.</p>
+        <p> When a client requests an SSL-encrypted connection with a server, the server sends back its SSL
+            certificate.</p>
+        <p>The client checks that the SSL certificate.</p>
+        <ui>
+            <li>is issued to this server</li>
+            <li>is signed by a trusted certificate authority</li>
+            <li>has not expired.</li>
+        </ui>
+
+        <p>The client then uses the SSL certificate’s public key to encrypt a randomly generated temporary secret key
+            and send it back to the server. Because the server has the corresponding private key, it can decrypt the
+            client’s temporary secret key. Now both client and server know this temporary secret key, so they can both
+            use it to symmetrically encrypt the messages they send to each other. They will discard this temporary
+            secret key after their session is over.
+        </p>
+
+        <h3>What happens if a hacker intercepts an SSL-encrypted session?</h3>
+
+        <p>Suppose a hacker intercepted every message sent between the client and the server. The hacker sees the SSL
+            certificate the server sends as well as the client’s encrypted temporary secret key. But because the hacker
+            doesn’t have the private key it can’t decrypt the temporarily secret key. And because it doesn’t have the
+            temporary secret key, it can’t decrypt any of the messages between the client and server.
+        </p>
+    </blockquote>
+
+
+    <footer class="page-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-md-8 col-sm-12">
+                    <h6 class="text-uppercase font-weight-bold">Additional Information</h6>
+                    <p></p>
+                    <p>This site was designed and developed by Sourav Halepalya Aswathnarayan
+                        <br/> as their masters assignment for the course Web development (IS-601)</p>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12">
+                    <h6 class="text-uppercase font-weight-bold">Contact</h6>
+                    <p>New Jersey Institute of Technology
+                        <br/>
+                        323 Dr Martin Luther King Jr Blvd, Newark, NJ 07102
+                        <br/>kwilliam@njit.edu
+                        <br/>+(973) 596-3000
+                    </p>
+                </div>
+            </div>
+            <div style="height: 20px"></div>
+            <div class="footer-copyright text-center">© 2020 Copyright:
+                <a href="https://github.com/sh667/IS601HistoryWeb">https://github.com/sh667/IS601HistoryWeb</a>
+            </div>
+        </div>
+    </footer>
+</div>
+</body>
+</html>

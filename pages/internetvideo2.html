@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>internet video2</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+            integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+            crossorigin="anonymous"></script>
+    <!--calling the js file used to make the background image stretch all the way across screen-->
+    <script src="../js/main.js"></script>
+    <!--calling the js file used to make the background image stretch all the way across screen-->
+    <link rel="stylesheet" type="text/css" href="../css/main.css">
+
+
+</head>
+<body>
+
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+
+        <ul class="nav navbar-nav">
+            <li class="active"><a href="https://github.com/sh667/IS601HistoryWeb">Home</a></li>
+            <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">Topics
+                    <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                    <li><a href="icann.html">ICANN</a></li>
+                    <li><a href="w3c.html">W3C</a></li>
+                    <li><a href="tim.html">Tim Berners Lee</a></li>
+                    <li><a href="internetworks.html">Internet Introduction</a></li>
+                    <li><a href="internet.html">Internet</a></li>
+                    <li><a href="internetvideo1.html">Internet-Wires,Cables,Wifi</a></li>
+                    <li><a href="internetvideo2.html">Internet-IP address & DNS</a></li>
+                    <li><a href="internetvideo3.html">Internet-Packets,Routing & Reliability</a></li>
+                    <li><a href="internetvideo4.html">Internet-HTTP & HTML</a></li>
+                    <li><a href="internetvideo5.html">Internet-Encryption & Public Keys</a></li>
+                    <li><a href="internetvideo6.html">Internet-Cyber security Crime </a></li>
+                </ul>
+            </li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="Team.html">Team</a></li>
+        </ul>
+    </div>
+</nav>
+
+<div>
+    <div class="text-center">
+
+
+        <div>
+            <img src="../images/internetv2.jpg" alt="inventionimage" style="horiz-align:center;width: 50%">
+        </div>
+    </div>
+    <div class="jumbotron text-center" style="horiz-align:center;width: 100%">
+        <h1>Internet Protocols & DNS</h1>
+    </div>
+
+    <blockquote class="blockquote">
+        <p class="mb-0">
+        <h3>How does network communicate with each other?</h3>
+
+        <p>Long before in the 1970s there was no standard methods for networks to communicate. Then came the two heros
+            Vint Cerf and Bob Kahn who developed something called the internet protocol.
+            which made the communication possible.
+        </p>
+        <h3>How does the Internet Work?</h3>
+        <p>The Internet works through a packet routing network in accordance with the Internet Protocol (IP), the
+            Transport Control Protocol (TCP) and other protocols.
+        </p>
+        <h3>What’s a protocol?</h3>
+        <p>A protocol is a set of rules specifying how computers should communicate with each other over a network. For
+            example, the Transport Control Protocol has a rule that if one computer sends data to another computer, the
+            destination computer should let the source computer know if any data was missing so the source computer can
+            re-send it. Or the Internet Protocol which specifies how computers should route information to other
+            computers by attaching addresses onto the data it sends.
+        </p>
+        <h3>Internet Protocol</h3>
+
+        <p>When we have to communicate over the internet , each devices as its on address called the IP address.When the
+            message is sent the IP address of destination is clipped along with the address of source to get the
+            information required.
+
+            Like all house address , IP address is the same for a computer.
+            IP address is usually written in 32 bits.
+            Example of IP address:
+            123.554.76.810
+            <ui>
+                <li>123----->Country</li>
+                <li>554----->Region</li>
+                <li> 76------>Subnet</li>
+                <li>810------>Device</li>
+            </ui>
+            The above IP address is called the IPv4 ,which was developed in the 1973.
+            Now we have IPv6 which provides more than billions of address which enough for everyone.
+        </p>
+        <h3>What do these Internet addresses look like?</h3>
+        <p>
+            These addresses are called IP addresses and there are two standards.
+        </p>
+        <p>The first address standard is called IPv4 and it looks like <code class="gp iq ir is it b">212.78.1.25</code>
+            . But because IPv4 supports only 2³²
+            (about 4 billion) possible addresses, the Internet Task Force proposed a new address standard called IPv6,
+            which look like <code class="gp iq ir is it b">3ffe:1893:3452:4:345:f345:f345:42fc</code> . IPv6 supports
+            2¹²⁸ possible addresses, allowing for
+            much more networked devices, which will be plenty more than the as of 2017 current 8+ billion networked
+            devices on the Internet.
+        </p>
+
+        <p> As such, there is a one-to-one mapping between IPv4 and IPv6 addresses. Note the switch from IPv4 to IPv6 is
+            still in progress and will take a long time. As of 2014, Google revealed their IPv6 traffic was only at 3%.
+        </p>
+        <div class="text-center">
+            <div>
+                <img src="../images/internetv21.jpg" alt="inventionimage"
+                     style="horiz-align:center;width:300px;height:250px">
+            </div>
+        </div>
+        <h3>How can there be over 8 billion networked devices on the Internet if there are only about 4 billion IPv4
+            addresses?</h3>
+
+        <p>It’s because there are public and private IP addresses. Multiple devices on a local network connected to the
+            Internet will share the same public IP address. Within the local network, these devices are differentiated
+            from each other by private IP addresses, typically of the form <code
+                    class="gp iq ir is it b">192.168.xx</code> or <code class="gp iq ir is it b">172.16.x.x</code> or
+            <code class="gp iq ir is it b">10.x.x.x</code>where <code class="gp iq ir is it b">x</code>
+            is a number between 1 and 255. These private IP addresses are assigned by Dynamic Host Configuration
+            Protocol (DHCP).</p>
+        <p> For example, if a laptop and a smart phone on the same local network both make a request to <code
+                class="gp iq ir is it b">www.google.com</code>,
+            before the packets leave the modem, it modifies the packet headers and assigns one of its ports to that
+            packet. When the google server responds to the requests, it sends data back to the modem at this specific
+            port, so the modem will know whether to route the packets to the laptop or the smart phone.</p>
+        <p>In this sense, IP addresses aren’t specific to a computer, but more the connection which the computer
+            connects to the Internet with. The address that is unique to your computer is the MAC address, which never
+            changes throughout the life of the computer.</p>
+        <p>This protocol of mapping private IP addresses to public IP addresses is called the Network Address
+            Translation (NAT) protocol. It’s what makes it possible to support 8+ billion networked devices with only 4
+            billion possible IPv4 addresses.
+        </p>
+        <h3>How do networked computers figure out ip addresses based on domain names?</h3>
+
+        <p>We call looking up the IP address of a human-readable domain name like <code class="gp iq ir is it b">www.google.com</code>
+            “resolving the IP
+            address”. Computers resolve IP addresses through the Domain Name System (DNS), a decentralized database of
+            mappings from domain names to IP addresses.
+        </p>
+        <p> To resolve an IP address, the computer first checks its local DNS cache, which stores the IP address of web
+            sites it has visited recently. If it can’t find the IP address there or that IP address record has expired,
+            it queries the ISP’s DNS servers which are dedicated to resolving IP addresses. If the ISP’s DNS servers
+            can’t find resolve the IP address, they query the root name servers, which can resolve every domain name for
+            a given top-level domain . Top-level domains are the words to the right of the right-most period in a domain
+            name. <code class="gp iq ir is it b">.com</code> <code class="gp iq ir is it b">.net</code><code
+                    class="gp iq ir is it b"> .org</code> are some examples of top-level domains.
+        </p>
+
+        <h3>DNS spoofing</h3>
+
+        <p>DNS spoofing, also referred to as DNS cache poisoning, is a form of computer security hacking in which
+            corrupt Domain Name System data is introduced into the DNS resolver's cache, causing the name server to
+            return an incorrect result record, e.g. an IP address.</p>
+
+        <h3>How is DNS spoofing done?</h3>
+         <p>DNS spoofing is done by replacing the IP addresses stored in the DNS server with the ones under control of
+            the attacker. Once it is done, whenever users try to go to a particular website, they get directed to the
+            false websites placed by the attacker in the spoofed DNS server.</p>
+
+
+    </blockquote>
+
+
+    <footer class="page-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-md-8 col-sm-12">
+                    <h6 class="text-uppercase font-weight-bold">Additional Information</h6>
+                    <p></p>
+                    <p>This site was designed and developed by Sourav Halepalya Aswathnarayan
+                        <br/> as their masters assignment for the course Web development (IS-601)</p>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12">
+                    <h6 class="text-uppercase font-weight-bold">Contact</h6>
+                    <p>New Jersey Institute of Technology
+                        <br/>
+                        323 Dr Martin Luther King Jr Blvd, Newark, NJ 07102
+                        <br/>kwilliam@njit.edu
+                        <br/>+(973) 596-3000
+                    </p>
+                </div>
+            </div>
+            <div style="height: 20px"></div>
+            <div class="footer-copyright text-center">© 2020 Copyright:
+                <a href="https://github.com/sh667/IS601HistoryWeb">https://github.com/sh667/IS601HistoryWeb</a>
+            </div>
+        </div>
+    </footer>
+</div>
+</body>
+</html>
