@@ -1,2 +1,3 @@
 # IS601HistoryWeb
-https://github.com/sh667/IS601HistoryWeb/index.html
+#This is the Github pages url for the website 'How the Internet Works'
+https://sh667.github.io/IS601HistoryWeb/
